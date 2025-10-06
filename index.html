@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infotech Services - Resume Writing</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="assets/company_logo.png" alt="Company Logo" class="logo-img">
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Our Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <button class="btn btn-primary">Get A Quote</button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <img src="assets/company_logo.png" alt="Company Logo" class="logo-img mobile-logo-img">
+            </div>
+            <button class="mobile-nav-close" id="mobileNavClose">×</button>
+        </div>
+        
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+                <svg class="mobile-nav-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                </svg>
+                <a href="#" class="mobile-nav-link">Home</a>
+            </li>
+            <li class="mobile-nav-item">
+                <svg class="mobile-nav-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/>
+                </svg>
+                <a href="#" class="mobile-nav-link">About Us</a>
+            </li>
+            <li class="mobile-nav-item">
+                <svg class="mobile-nav-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"/>
+                </svg>
+                <a href="#" class="mobile-nav-link">Our Services</a>
+            </li>
+            <li class="mobile-nav-item">
+                <svg class="mobile-nav-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                </svg>
+                <a href="#" class="mobile-nav-link">Pricing</a>
+            </li>
+            <li class="mobile-nav-item">
+                <svg class="mobile-nav-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+                </svg>
+                <a href="#" class="mobile-nav-link">FAQ</a>
+            </li>
+        </ul>
+        
+        <div class="mobile-nav-cta">
+            <button class="btn btn-primary">CONTACT US</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        Your Resume
+                        <span class="highlight">Deserves A Yes</span> Let's
+                        Make It Happen
+                    </h1>
+                    
+                    <div class="hero-description">
+                        <p>If Your Resume Isn't Getting Responses, It's Time For An Upgrade.</p>
+                        <p>Get An ATS-Optimized Resume Crafted By HR Experts To Help You</p>
+                        <p>Land More Interviews. Our Resumes Are Designed To Get Your Foot</p>
+                        <p>In The Door And Place Your Name At The Top Of The Shortlist.</p>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-secondary">RESUME PACKAGES</button>
+                        <button class="btn btn-primary">CONTACT US</button>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="hero-right">
+                    <div class="hero-image-container">
+                        <!-- Background Decorative Elements -->
+                        <div class="background-circle"></div>
+                       
+                        
+                        <!-- Student Image -->
+                        <div class="student-image">
+                            <img src="assets/Women.png" alt="Happy student with backpack and books" class="student-img">
+                        </div>
+
+                        <!-- Rating Card -->
+                        <div class="rating-card">
+                            <div class="rating-score">4.9</div>
+                            <div class="rating-content">
+                                <div class="stars">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFD700"/>
+                                    </svg>
+                                </div>
+                                <div class="rating-text">Instructor Rating</div>
+                            </div>
+                        </div>
+
+                        <!-- Statistics Card -->
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <img src="assets/cap.png" alt="Graduation Cap" class="cap-icon">
+                            </div>
+                            <div class="stats-content">
+                                <div class="stats-number">260+</div>
+                                <div class="stats-text">Online Resume<br>Created</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="what-you-get">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">What You Get</p>
+                <h1>
+                    You're Not Just <span class="highlight">Another Applicant</span> And Your<br>
+                    Resume Shouldn't Look Like One
+                </h1>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/1.png" alt="Resume Format" class="service-img">
+                    </div>
+                    <h3 class="service-title">A Resume Format That Gets You Interviews</h3>
+                    <p class="service-description">
+                        Get a professionally written, keyword-optimized resume that lands in recruiter inboxes.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/2.png" alt="Cover Letter Style" class="service-img">
+                    </div>
+                    <h3 class="service-title">A Cover Letter Style That Stands Out Strong</h3>
+                    <p class="service-description">
+                        Stand out with a cover letter that speaks directly to the role and reflects your strengths.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/3.png" alt="LinkedIn Profile" class="service-img">
+                    </div>
+                    <h3 class="service-title">A LinkedIn Profile That Works For You</h3>
+                    <p class="service-description">
+                        Attract the right eyes, start conversations, and show up in recruiter searches.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/4.png" alt="Interview Strategy" class="service-img">
+                    </div>
+                    <h3 class="service-title">An Interview Strategy That Builds Confidence</h3>
+                    <p class="service-description">
+                        Interview preparation with real HR professionals so you speak clearly confidently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile Menu Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+            const mobileNavClose = document.getElementById('mobileNavClose');
+            
+            // Open mobile menu
+            function openMobileMenu() {
+                mobileNav.classList.add('active');
+                mobileNavOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            // Close mobile menu
+            function closeMobileMenu() {
+                mobileNav.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            // Event listeners
+            mobileMenuToggle.addEventListener('click', openMobileMenu);
+            mobileNavClose.addEventListener('click', closeMobileMenu);
+            mobileNavOverlay.addEventListener('click', closeMobileMenu);
+            
+            // Close menu when clicking on nav links
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+            
+            // Close menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+                    closeMobileMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
